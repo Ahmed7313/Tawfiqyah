@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "77126649246",
+    "firebase_url": "https://tawfiqya.firebaseio.com",
+    "project_id": "tawfiqya",
+    "storage_bucket": "tawfiqya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77126649246:android:ec45784c7538f26eb5c28f",
+        "android_client_info": {
+          "package_name": "com.noon.tawfiqyah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77126649246-1vr03vf76n5jg2ojjmcqa11messn1kap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.noon.tawfiqyah",
+            "certificate_hash": "f260285d7427ae89ea6c588a44a905750beb23cf"
+          }
+        },
+        {
+          "client_id": "77126649246-t0vmp0v9c0j9q059v4suha0copq66ja0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs5Kqn2_fF_8XSX_OqhwIJKy8RdBrXwvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77126649246-t0vmp0v9c0j9q059v4suha0copq66ja0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

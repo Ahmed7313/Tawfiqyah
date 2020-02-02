@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/product_cardview"
+        android:id="@+id/apartment_cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:clickable="true"
-        android:focusable="true"
         android:layout_margin="8dp"
         android:background="#EEEEE0"
+        android:clickable="true"
+        android:focusable="true"
+        android:adjustViewBounds="true"
         android:layoutDirection="ltr"
         android:foreground="?attr/selectableItemBackground"
         app:cardCornerRadius="24dp"
+        card_view:cardUseCompatPadding="true"
         >
 
         <LinearLayout
@@ -28,8 +30,8 @@
                 android:id="@+id/apartment_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
                 android:layoutDirection="ltr"
                 app:srcCompat="@drawable/b" />
 
@@ -148,10 +150,10 @@
                     android:layout_gravity="center"
                     />
 
-            </LinearLayout>
+        </LinearLayout>
 
             <LinearLayout
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="2dp"
                 android:background="@color/cardview_dark_background"
                 android:layout_gravity="center"/>
@@ -162,7 +164,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:id="@+id/call"
+                    android:id="@+id/apartment_phone"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -185,7 +187,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/wishlist"
+                    android:id="@+id/apartment_wishList"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -212,7 +214,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/note"
+                    android:id="@+id/apartment_note"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -260,9 +262,6 @@
 
 
         </LinearLayout>
-
-
-
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

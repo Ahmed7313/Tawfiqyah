@@ -81,4 +81,5 @@
     <string name="radio_male">PayPal</string>
     <string name="radio_female">Pay ATM</string>
     <string name="cod">COD</string>
+    <string name="title_activity_complete_sign_up_data">CompleteSignUpData</string>
 </resources>
