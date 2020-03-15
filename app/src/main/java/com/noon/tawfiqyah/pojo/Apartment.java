@@ -1,4 +1,4 @@
-package com.noon.tawfiqyah;
+package com.noon.tawfiqyah.pojo;
 
 import java.io.Serializable;
 
@@ -73,6 +73,8 @@ public class Apartment implements Serializable {
         this.apartmentPaymentMethod = apartmentPaymentMethod;
         this.apartmentDescreption = apartmentDescreption;
     }
+
+    public Apartment() {}
 
     public void setApartmentId(String apartmentId) {
         this.apartmentId = apartmentId;

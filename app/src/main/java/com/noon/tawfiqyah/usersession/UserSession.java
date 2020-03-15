@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.noon.tawfiqyah.LoginActivity;
+import com.noon.tawfiqyah.Retrofit.Rigister.LoginActivity;
 
 import java.util.HashMap;
 

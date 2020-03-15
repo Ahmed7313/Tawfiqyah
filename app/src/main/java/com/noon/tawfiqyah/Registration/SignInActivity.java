@@ -42,7 +42,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.noon.tawfiqyah.Common;
-import com.noon.tawfiqyah.MainActivity;
+import com.noon.tawfiqyah.UI.MainActivity;
 import com.noon.tawfiqyah.R;
 import com.noon.tawfiqyah.netwroksync.CheckInternetConnection;
 import com.noon.tawfiqyah.usersession.UserSession;

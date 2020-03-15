@@ -39,9 +39,9 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.noon.tawfiqyah.MainActivity;
+import com.noon.tawfiqyah.UI.MainActivity;
 import com.noon.tawfiqyah.R;
-import com.noon.tawfiqyah.User;
+import com.noon.tawfiqyah.pojo.User;
 import com.noon.tawfiqyah.usersession.UserSession;
 
 

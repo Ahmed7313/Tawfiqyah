@@ -1,4 +1,4 @@
-package com.noon.tawfiqyah;
+package com.noon.tawfiqyah.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
@@ -24,12 +24,12 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.noon.tawfiqyah.R;
+import com.noon.tawfiqyah.pojo.Apartment;
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 import com.smarteist.autoimageslider.SliderViewAdapter;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 

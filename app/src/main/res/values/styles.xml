@@ -8,6 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="background">@drawable/rounded_shape</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="FullscreenDialogTheme" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+    </style>
+
     <style name="WhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -15,14 +30,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
-        <item name="background">@drawable/rounded_shape</item>
-        <item name="colorButtonNormal">@color/gen_white</item>
-        <item name="colorControlHighlight">@color/gen_white</item>
-        <item name="android:textColor">@color/gen_white</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:paddingRight">20dp</item>
-    </style>
 
     <style name="AppTheme.RoundedCornerDarkMaterialButton" parent="Widget.AppCompat.Button.Colored">
         <item name="background">@drawable/dark_rounded_shape</item>
@@ -45,27 +52,27 @@
     </style>
 
 
-    <!--    <style name="CustomTheme" parent="MaterialDrawerTheme">-->
-    <!--        &lt;!&ndash; ...and here we setting appcompat’s color theming attrs &ndash;&gt;-->
-    <!--        <item name="colorPrimary">@color/material_drawer_primary</item>-->
-    <!--        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>-->
-    <!--        <item name="colorAccent">@color/material_drawer_accent</item>-->
-    <!--        <item name="titleTextColor">@color/md_grey_600</item>-->
+    <style name="CustomTheme" parent="MaterialDrawerTheme">
+        <!-- ...and here we setting appcompat’s color theming attrs -->
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+        <item name="titleTextColor">@color/md_grey_600</item>
 
-    <!--        &lt;!&ndash; MaterialDrawer specific values &ndash;&gt;-->
-    <!--        <item name="android:textColorSecondary">@android:color/white</item>-->
-    <!--        <item name="material_drawer_background">@color/material_drawer_background</item>-->
-    <!--        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>-->
-    <!--        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>-->
-    <!--        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>-->
-    <!--        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>-->
-    <!--        <item name="material_drawer_divider">@color/material_drawer_divider</item>-->
-    <!--        <item name="material_drawer_selected">@color/material_drawer_selected</item>-->
-    <!--        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>-->
-    <!--        <item name="material_drawer_header_selection_text">-->
-    <!--            @color/material_drawer_header_selection_text-->
-    <!--        </item>-->
-    <!--    </style>-->
+        <!-- MaterialDrawer specific values -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+    </style>
 
 
     <style name="homegridtext">
@@ -80,10 +87,10 @@
     <style name="homegridimage">
         <item name="android:gravity"></item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_height">100dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
-        <item name="android:scaleType">fitCenter</item>
+        <item name="android:scaleType">centerCrop</item>
     </style>
 
     <style name="homegridcard">
@@ -91,12 +98,13 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_margin">5dp</item>
         <item name="elevation">5dp</item>
+        <item name="android:background">@color/gen_black</item>
         <item name="android:layout_weight">5</item>
         <item name="android:gravity">center</item>
     </style>
 
     <style name="notificationstyle">
-        <item name="background">@color/light_grey</item>
+        <item name="background">@color/grey_light</item>
         <item name="android:cacheColorHint">@android:color/transparent</item>
         <item name="divider">@android:color/transparent</item>
         <item name="android:dividerHeight">0dp</item>
@@ -109,7 +117,7 @@
         <item name="android:textColorHint">#9575cd</item>
         <item name="android:textSize">20sp</item>
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@color/primary</item>
         <item name="colorControlNormal">#9575cd</item>
         <item name="colorControlActivated">@color/colorAccent</item>
     </style>
@@ -119,26 +127,5 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        &lt;!&ndash; Customize your theme here. &ndash;&gt;
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
--->
 </resources>

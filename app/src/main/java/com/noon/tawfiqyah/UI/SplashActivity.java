@@ -1,4 +1,4 @@
-package com.noon.tawfiqyah;
+package com.noon.tawfiqyah.UI;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.noon.tawfiqyah.R;
 import com.noon.tawfiqyah.Registration.SignInActivity;
 
 import androidx.appcompat.app.AppCompatActivity;

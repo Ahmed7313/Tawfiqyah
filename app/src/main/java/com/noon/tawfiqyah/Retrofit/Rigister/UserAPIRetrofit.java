@@ -1,4 +1,6 @@
-package com.noon.tawfiqyah;
+package com.noon.tawfiqyah.Retrofit.Rigister;
+
+import com.noon.tawfiqyah.pojo.User;
 
 import java.util.List;
 

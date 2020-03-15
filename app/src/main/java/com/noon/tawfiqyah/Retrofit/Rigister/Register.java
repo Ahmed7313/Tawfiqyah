@@ -1,4 +1,4 @@
-package com.noon.tawfiqyah;
+package com.noon.tawfiqyah.Retrofit.Rigister;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -29,7 +29,9 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
+import com.noon.tawfiqyah.R;
 import com.noon.tawfiqyah.netwroksync.CheckInternetConnection;
+import com.noon.tawfiqyah.pojo.User;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;

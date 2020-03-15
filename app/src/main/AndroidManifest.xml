@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ApartmentDetailes"
+        <activity android:name=".UI.ApartmentDetailes"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".Registration.SignUpActivity"
@@ -30,7 +30,7 @@
             android:name=".Registration.SignInActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".UI.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -40,13 +40,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".Retrofit.Rigister.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Register"
+            android:name=".Retrofit.Rigister.Register"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UI.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

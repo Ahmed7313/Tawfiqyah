@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@color/gradient_background"
-    tools:context= ".Register">
+    tools:context= ".Retrofit.Rigister.Register">
 
     <ScrollView
         android:layout_width="match_parent"

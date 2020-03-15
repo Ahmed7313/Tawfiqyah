@@ -1,4 +1,4 @@
-package com.noon.tawfiqyah;;
+package com.noon.tawfiqyah.pojo;;
 
 public class User {
 

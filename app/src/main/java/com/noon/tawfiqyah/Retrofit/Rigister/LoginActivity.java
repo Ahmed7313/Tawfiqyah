@@ -1,4 +1,4 @@
-package com.noon.tawfiqyah;
+package com.noon.tawfiqyah.Retrofit.Rigister;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -16,16 +16,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.kaopiz.kprogresshud.KProgressHUD;
+import com.noon.tawfiqyah.R;
+import com.noon.tawfiqyah.UI.MainActivity;
 import com.noon.tawfiqyah.netwroksync.CheckInternetConnection;
+import com.noon.tawfiqyah.pojo.User;
 import com.noon.tawfiqyah.usersession.UserSession;
 
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.List;
 
