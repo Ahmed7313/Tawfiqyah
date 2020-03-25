@@ -27,14 +27,14 @@ public class FilterDialog extends DialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.search_bottom_sheet, container, false);
 
-        TextView priceFilter = view.findViewById(R.id.filter_price);
-        priceFilter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BottomSheetPriceFilter priceFilter1Dialog = new BottomSheetPriceFilter();
-                priceFilter1Dialog.show(getFragmentManager(), "test");
-            }
-        });
+//        TextView priceFilter = view.findViewById(R.id.filter_price);
+//        priceFilter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                BottomSheetPriceFilter priceFilter1Dialog = new BottomSheetPriceFilter();
+//                priceFilter1Dialog.show(getFragmentManager(), "test");
+//            }
+//        });
 
         return view;
     }

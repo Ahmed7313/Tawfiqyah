@@ -36,12 +36,12 @@ public class FullScreanSearchDialog  extends DialogFragment implements View.OnCl
         View view = inflater.inflate(R.layout.search_bottom_sheet, container, false);
         ImageButton close = view.findViewById(R.id.fullscreen_dialog_close);
         Button action = view.findViewById(R.id.filter_apply);
-        View rangePrices = view.findViewById(R.id.filter_price);
+       // View rangePrices = view.findViewById(R.id.filter_price);
 
 
         close.setOnClickListener(this);
         action.setOnClickListener(this);
-        rangePrices.setOnClickListener(this);
+      //  rangePrices.setOnClickListener(this);
 
         return view;
     }
