@@ -21,6 +21,7 @@ public class Apartment implements Serializable {
     private String  apartmentView;
     private String  apartmentPaymentMethod;
     private String  apartmentDescreption;
+    private String apartmentSaleOrRent;
 
 
 
@@ -54,7 +55,8 @@ public class Apartment implements Serializable {
                      String apartmentFinishing,
                      String apartmentView,
                      String apartmentPaymentMethod,
-                     String apartmentDescreption) {
+                     String apartmentDescreption,
+                     String apartmentSaleOrRent) {
 
         this.apartmentId = apartmentId;
         this.apartmentImage = apartmentImage;
@@ -72,7 +74,17 @@ public class Apartment implements Serializable {
         this.apartmentView = apartmentView;
         this.apartmentPaymentMethod = apartmentPaymentMethod;
         this.apartmentDescreption = apartmentDescreption;
+        this.apartmentSaleOrRent = apartmentSaleOrRent;
     }
+
+    public String getApartmentSaleOrRent() {
+        return apartmentSaleOrRent;
+    }
+
+    public void setApartmentSaleOrRent(String apartmentSaleOrRent) {
+        this.apartmentSaleOrRent = apartmentSaleOrRent;
+    }
+
 
     public Apartment() {}
 

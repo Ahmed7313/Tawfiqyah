@@ -149,7 +149,7 @@
                     android:layoutDirection="rtl"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="تحديد"
+                    android:text="تصفية"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
 

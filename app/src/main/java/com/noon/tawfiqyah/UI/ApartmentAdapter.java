@@ -13,6 +13,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.noon.tawfiqyah.R;
 import com.noon.tawfiqyah.pojo.Apartment;
@@ -81,32 +82,32 @@ public class ApartmentAdapter extends RecyclerView.Adapter<ApartmentAdapter.View
             }
         });
 
-//        holder.addToWishList.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//
-//                mAuth = FirebaseAuth.getInstance();
-//                //get firebase instance
-//                //initializing database reference
-//                mDatabaseReference = FirebaseDatabase.getInstance().getReference();
-//                //SharedPreference for Cart Value
-//                session = new UserSession(context);
-//                if (heartAnimationIsPressed == 0){
-//                    holder.heartAnimation.playAnimation();
-//                    String currentUserID = mAuth.getCurrentUser().getUid();
-//                    mDatabaseReference.child("Users").child(currentUserID).child("wishList").push()
-//                            .setValue(getProductObject(apartmentList.get(position)));
-//                    session.increaseWishlistValue();
-//                    heartAnimationIsPressed = 1;
-//                }else if (heartAnimationIsPressed == 1){
-//                    holder.heartAnimation.setProgress(0);
-//                    String currentUserID = mAuth.getCurrentUser().getUid();
-//                    mDatabaseReference.child("Users").child(currentUserID).child("wishList").setValue("");
-//                    heartAnimationIsPressed = 0;
-//                }
-//            }
-//        });
+        holder.addToWishList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                mAuth = FirebaseAuth.getInstance();
+                //get firebase instance
+                //initializing database reference
+                mDatabaseReference = FirebaseDatabase.getInstance().getReference();
+                //SharedPreference for Cart Value
+                session = new UserSession(context);
+                if (heartAnimationIsPressed == 0){
+                    holder.heartAnimation.playAnimation();
+                    String currentUserID = mAuth.getCurrentUser().getUid();
+                    mDatabaseReference.child("Users").child(currentUserID).child("wishList").push()
+                            .setValue(getProductObject(apartmentList.get(position)));
+                    session.increaseWishlistValue();
+                    heartAnimationIsPressed = 1;
+                }else if (heartAnimationIsPressed == 1){
+                    holder.heartAnimation.setProgress(0);
+                    String currentUserID = mAuth.getCurrentUser().getUid();
+                    mDatabaseReference.child("Users").child(currentUserID).child("wishList").setValue("");
+                    heartAnimationIsPressed = 0;
+                }
+            }
+        });
 
         holder.apartment_note.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -186,7 +187,7 @@ public class ApartmentAdapter extends RecyclerView.Adapter<ApartmentAdapter.View
         }
     }
 
-    private Apartment getProductObject(Apartment model) {
+    public Apartment getProductObject(Apartment model) {
         return new Apartment(
                 model.getApartmentId(),
                 model.getApartmentImage(),
@@ -203,7 +204,8 @@ public class ApartmentAdapter extends RecyclerView.Adapter<ApartmentAdapter.View
                 model.getApartmentFinishing(),
                 model.getApartmentView(),
                 model.getApartmentPaymentMethod(),
-                model.getApartmentDescreption());
+                model.getApartmentDescreption(),
+                model.getApartmentSaleOrRent());
 
     }
 }

@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.noon.tawfiqyah.FilterDialogs.FilterDialog;
 import com.noon.tawfiqyah.FilterDialogs.PriceFilter;
+import com.noon.tawfiqyah.FilterDialogs.SaleOrRentDialogueFilter;
 import com.noon.tawfiqyah.R;
 import com.noon.tawfiqyah.netwroksync.CheckInternetConnection;
 import com.noon.tawfiqyah.pojo.Apartment;
@@ -29,7 +30,7 @@ import com.noon.tawfiqyah.usersession.UserSession;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements PriceFilter.PriceSheetListner {
+public class MainActivity extends AppCompatActivity implements PriceFilter.PriceSheetListner, SaleOrRentDialogueFilter.SaleOrRent {
 
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
@@ -105,6 +106,15 @@ public class MainActivity extends AppCompatActivity implements PriceFilter.Price
                 priceFilter.show(getSupportFragmentManager(), "Price Filter");
             }
         });
+
+        View rentOrSaleDatabase = findViewById(R.id.rent_or_sale_filter);
+        rentOrSaleDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SaleOrRentDialogueFilter saleOrRentDialogueFilter = new SaleOrRentDialogueFilter();
+                saleOrRentDialogueFilter.show(getSupportFragmentManager(), "SaleOrRent");
+            }
+        });
     }
 
     private void fetch (){
@@ -157,5 +167,10 @@ public class MainActivity extends AppCompatActivity implements PriceFilter.Price
         } else {
             fetch();
         }
+    }
+
+    @Override
+    public void onSaleOrRentChoosing(String choice) {
+
     }
 }

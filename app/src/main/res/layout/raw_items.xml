@@ -10,16 +10,17 @@
         android:id="@+id/apartment_cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
         android:background="#EEEEE0"
         android:clickable="true"
         android:focusable="true"
-        android:adjustViewBounds="true"
-        android:layoutDirection="ltr"
         android:foreground="?attr/selectableItemBackground"
-        app:cardCornerRadius="24dp"
-        card_view:cardUseCompatPadding="true"
-        >
+        android:layoutDirection="ltr"
+        card_view:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,18 +31,18 @@
                 android:id="@+id/apartment_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
                 android:adjustViewBounds="true"
                 android:layoutDirection="ltr"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/b" />
 
             <TextView
                 android:id="@+id/apartment_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15 / nov / 2020"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:text="15 / nov / 2020" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -81,17 +82,17 @@
                 <ImageView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:src="@drawable/ic_location"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="8dp"
-                    android:layout_gravity="center"/>
+                    android:src="@drawable/ic_location" />
 
                 <TextView
                     android:id="@+id/apartment_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="serif"
-                    android:layout_marginLeft="8dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="serif"
                     android:text="الساحل الشمالي"
                     android:textAppearance="@style/TextLabel"
                     android:textSize="18sp"
@@ -105,58 +106,55 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/ic_space"/>
+                    android:src="@drawable/ic_space" />
 
                 <TextView
                     android:id="@+id/apartment_space"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="152 m2"
                     android:layout_gravity="center"
-                    android:textSize="18sp"
-                    />
+                    android:text="152 m2"
+                    android:textSize="18sp" />
 
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginLeft="8dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_bed"/>
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_bed" />
 
                 <TextView
                     android:id="@+id/apartment_beds_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="8dp"
                     android:text="3"
-                    android:textSize="18dp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="18dp" />
 
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:layout_marginLeft="8dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_shower"/>
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_shower" />
 
                 <TextView
                     android:id="@+id/apartment_bath_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="8dp"
                     android:text="1"
-                    android:textSize="18dp"
-                    android:layout_gravity="center"
-                    />
+                    android:textSize="18dp" />
 
-        </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="2dp"
-                android:background="@color/cardview_dark_background"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:background="@color/cardview_dark_background" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -166,99 +164,98 @@
                 <LinearLayout
                     android:id="@+id/apartment_phone"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="38dp"
                         android:layout_height="38dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_call"/>
+                        android:src="@drawable/ic_call" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Call"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:text="Call" />
                 </LinearLayout>
 
 
                 <LinearLayout
                     android:id="@+id/apartment_wishList"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/add_to_wishlist"
-                    android:layout_width="40dp"
-                    app:lottie_fileName="heart.json"
-                    android:layout_height="40dp"
-                    android:foregroundGravity="center"
-                    android:layout_gravity="center"
-                    android:src="@drawable/cartempty"
-                    android:visibility="visible"/>
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/add_to_wishlist"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/cartempty"
+                        android:visibility="visible"
+                        app:lottie_fileName="heart.json" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wish List"
-                    android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Wish List" />
                 </LinearLayout>
 
 
                 <LinearLayout
                     android:id="@+id/apartment_note"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="38dp"
                         android:layout_height="38dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_notes"/>
+                        android:src="@drawable/ic_notes" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Notes"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:text="Notes" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/share_apartment"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="38dp"
                         android:layout_height="38dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/share"/>
+                        android:src="@drawable/share" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Share"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:text="Share" />
                 </LinearLayout>
 
             </LinearLayout>
-
 
 
         </LinearLayout>
